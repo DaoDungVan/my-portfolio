@@ -1,49 +1,41 @@
 # Dao Dung Van — Portfolio
 
-Apple-style portfolio. React + Vite, split into components, data, assets, hooks and per-component CSS.
+Trang portfolio cá nhân, lấy cảm hứng từ phong cách Apple.
 
-## Run
+## Cách chạy thử trên máy
+
 ```bash
 npm install
 npm run dev
 ```
 
-## Build / deploy
+Mở link hiện ra trong terminal (thường là `http://localhost:5173`) để xem trang web.
+
+## Cách build để deploy
+
 ```bash
-npm run build      # -> dist/
-```
-Deploy to Vercel: push to GitHub → import repo (Vite auto-detected). Or `npx vercel`.
-
-## Structure
-```
-src/
-  main.jsx                 entry, imports global.css
-  App.jsx                  composes the sections
-  styles/global.css        design tokens, reset, buttons, section scaffold, responsive
-  components/
-    Nav.jsx   / Nav.css
-    Hero.jsx  / Hero.css
-    About.jsx / About.css
-    Skills.jsx/ Skills.css
-    Work.jsx  / Work.css
-    Contact.jsx / Contact.css
-    Footer.jsx  / Footer.css
-    Logo.jsx               skill logos (Simple Icons, CC0), custom glyphs, GitHub mark
-  data/
-    skills.js              SKILLS list
-    stack.js               STACK list
-    icons.js               BRAND icon paths
-  assets/
-    avatar.js              avatar image (base64)
-    vivudee.js             Vivudee clip + poster (base64)
-  hooks/
-    useReveal.js           scroll-reveal observer
-public/
-  vivudee.mp4              HD clip (swap <video> src to "/vivudee.mp4" in Work.jsx to use it)
+npm run build
 ```
 
-## Editing
-- Text/data: `src/data/*` and the JSX in `src/components/*`.
-- Colors/tokens: `:root` in `src/styles/global.css`.
-- Replace the avatar or Vivudee clip: regenerate the base64 in `src/assets/*`,
-  or switch the Work `<video>` to the file at `public/vivudee.mp4`.
+Lệnh này tạo ra thư mục `dist/` chứa bản web hoàn chỉnh, sẵn sàng để đưa lên hosting.
+
+Cách deploy lên Vercel: đẩy code lên GitHub, sau đó vào Vercel chọn "Import" repo này — Vercel sẽ tự nhận diện và build. Hoặc chạy `npx vercel` để deploy trực tiếp từ máy.
+
+## Trang web có những phần gì
+
+- **Nav** — thanh điều hướng trên cùng
+- **Hero** — phần giới thiệu đầu trang
+- **About** — giới thiệu bản thân
+- **Skills** — danh sách kỹ năng
+- **Work** — các sản phẩm/dự án đã làm
+- **Contact** — thông tin liên hệ
+- **Footer** — chân trang
+
+## Muốn sửa nội dung thì sửa ở đâu
+
+- **Đổi chữ/nội dung**: vào thư mục `src/components/`, mỗi phần của trang có 1 file riêng (ví dụ muốn sửa phần Skills thì mở `src/components/Skills.jsx`).
+- **Đổi danh sách kỹ năng / công nghệ dùng**: sửa trong `src/data/skills.js` và `src/data/stack.js`.
+- **Đổi màu sắc, font, khoảng cách chung**: sửa trong `src/styles/global.css`.
+- **Đổi ảnh đại diện hoặc video Vivudee**: thay file trong `src/assets/` hoặc video trong `public/vivudee.mp4`.
+
+Mỗi phần (Nav, Hero, About...) có 1 file `.jsx` (nội dung/cấu trúc) đi kèm 1 file `.css` (giao diện) cùng tên.
