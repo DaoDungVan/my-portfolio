@@ -1,0 +1,29 @@
+/* ── work ── */
+.work-card{max-width:920px;margin:0 auto}
+.browser{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  box-shadow:0 30px 70px -40px rgba(0,0,0,.4);margin-bottom:48px}
+.browser-bar{display:flex;align-items:center;gap:14px;padding:11px 16px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.browser-bar .dots{display:flex;gap:7px}
+.browser-bar .dots i{width:11px;height:11px;border-radius:50%;background:#dfe1e5}
+.browser-bar .dots i:nth-child(1){background:#ff5f57}
+.browser-bar .dots i:nth-child(2){background:#febc2e}
+.browser-bar .dots i:nth-child(3){background:#28c840}
+.browser-bar .url{flex:1;text-align:center;font-size:13px;color:var(--muted);background:var(--card);border:1px solid var(--line);
+  border-radius:8px;padding:5px 12px}
+.browser-bar .visit{font-size:13px;color:var(--blue);font-weight:500}
+.shot{position:relative;background:var(--bg2)}
+.shot img,.shot video{display:block;width:100%;height:auto}
+.shot-ph{min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:40px 24px;
+  background:var(--bg2)}
+.ph-icon{font-size:34px;opacity:.5}
+.ph-title{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.ph-sub{font-size:14px;color:var(--muted);max-width:30em;line-height:1.5}
+.ph-sub code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.work-info{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:820px;margin:0 auto 32px}
+.winfo h5{font-size:17px;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
+.winfo p{font-size:14.5px;color:var(--muted);line-height:1.5}
+.work-meta{text-align:center;margin-bottom:18px}
+.work-tag{font-size:14px;color:var(--muted2);font-weight:500}
+.proj-stack{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 auto 26px;max-width:600px}
+.chip{font-size:13px;padding:6px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--card)}
+.work-links{display:flex;gap:14px;justify-content:center}

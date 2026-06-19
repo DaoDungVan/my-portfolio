@@ -1,0 +1,20 @@
+footer{position:relative;background:var(--footer-bg);border-top:1px solid var(--footer-border);color:#f4f4f2;padding:88px 0 32px;overflow:hidden}
+.foot-watermark{position:absolute;left:50%;bottom:-4%;transform:translateX(-50%);font-weight:800;
+  font-size:clamp(140px,30vw,420px);line-height:.8;letter-spacing:-.05em;color:#fff;opacity:.04;
+  white-space:nowrap;pointer-events:none;user-select:none}
+.footer-main{position:relative;z-index:1;display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:42px;padding-bottom:64px}
+.foot-statement{font-size:clamp(30px,4vw,50px);font-weight:700;letter-spacing:-.02em;line-height:1.05;max-width:8em}
+.foot-statement .dim{color:#6f6f72}
+.foot-sub{margin-top:16px;font-size:14px;color:#9a9a9d;max-width:24em;line-height:1.55}
+.fcol-d h6{font-size:16px;font-weight:600;color:#fff;margin-bottom:18px}
+.fcol-d h6::before{content:"/";color:#5a5a5d;margin-right:1px}
+.foot-pills{display:flex;flex-wrap:wrap;gap:10px;max-width:250px}
+.foot-pills a{background:#f1f1ed;color:#15161a;font-size:13.5px;font-weight:500;padding:9px 15px;border-radius:11px;transition:.16s}
+.foot-pills a:hover{background:#fff;transform:translateY(-2px)}
+.foot-contact a{display:block;color:#c8c8cb;font-size:15px;margin-bottom:11px;transition:color .15s;width:fit-content}
+.foot-contact a:hover{color:#fff}
+.footer-bottom{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid rgba(255,255,255,.12);padding-top:22px;flex-wrap:wrap;gap:10px}
+.footer-bottom span{font-size:12.5px;color:#85858a}
+.footer-bottom .totop{font-size:12.5px;color:#bdbdc0;transition:color .15s,transform .2s;display:inline-block}
+.footer-bottom .totop:hover{color:#fff;transform:translateY(-2px)}

@@ -1,0 +1,15 @@
+/* ── skills marquee ── */
+.marquee-wrap{display:flex;flex-direction:column;gap:18px;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.row{overflow:hidden}
+.track{display:flex;gap:16px;width:max-content;animation:scrollX 46s linear infinite;will-change:transform}
+.row.rev .track{animation-direction:reverse;animation-duration:54s}
+.marquee-wrap:hover .track{animation-play-state:paused}
+.scard{flex:0 0 auto;width:255px;background:var(--card);border:1px solid var(--line);border-radius:18px;
+  padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.scard .badge{width:42px;height:42px;border-radius:50%;flex-shrink:0;display:grid;place-items:center}
+.scard .logo{width:23px;height:23px}
+.gh-mark{width:17px;height:17px;margin-right:7px;vertical-align:-3px}
+.scard .sname{font-size:16px;font-weight:600;letter-spacing:-.01em}
+.scard .stag{font-size:13px;color:var(--muted);margin-top:1px}

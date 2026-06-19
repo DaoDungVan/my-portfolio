@@ -1,0 +1,20 @@
+/* ── hero ── */
+.hero{padding:150px 0 110px;text-align:center}
+.eyebrow{font-size:15px;color:var(--blue);font-weight:600;letter-spacing:-.1px;margin-bottom:14px}
+h1.name{font-size:clamp(46px,8vw,88px);font-weight:700;letter-spacing:-.03em;line-height:1.04;margin-bottom:22px}
+.subhead{font-size:clamp(19px,2.4vw,26px);font-weight:400;color:var(--muted);max-width:20em;margin:0 auto 32px;line-height:1.35}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.avatar{width:136px;height:136px;border-radius:50%;margin:0 auto 28px;position:relative;padding:5px;
+  box-shadow:0 14px 36px -12px rgba(0,0,0,.30);
+  animation:avIn .85s cubic-bezier(.2,.7,.2,1) both;transition:transform .3s ease,box-shadow .3s ease}
+.avatar::before{content:"";position:absolute;inset:0;border-radius:50%;z-index:0;
+  background:conic-gradient(from 0deg,#0071e3,#5e5ce6,#32ade6,#30d158,#0071e3);
+  animation:avSpin 5s linear infinite}
+.avatar::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--card);z-index:1}
+.avatar img{position:relative;z-index:2;width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.avatar .status{position:absolute;right:9px;bottom:9px;z-index:3;width:18px;height:18px;border-radius:50%;background:#30d158;
+  border:3px solid var(--card);box-shadow:0 0 0 2px rgba(48,209,88,.25)}
+.avatar:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 22px 48px -14px rgba(0,0,0,.38)}
+.avatar:hover::before{animation-duration:2s}
+@keyframes avIn{from{opacity:0;transform:translateY(12px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes avSpin{to{transform:rotate(360deg)}}

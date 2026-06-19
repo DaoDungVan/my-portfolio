@@ -1,0 +1,12 @@
+/* ── about ── */
+.about-statement{font-size:clamp(26px,3.8vw,42px);font-weight:600;letter-spacing:-.02em;line-height:1.18;
+  max-width:16em;margin:0 auto 40px;text-align:center}
+.about-statement .grey{color:var(--muted2)}
+.about-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;max-width:860px;margin:0 auto}
+.acol h4{font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+.acol p{font-size:15.5px;color:var(--muted);line-height:1.5}
+.stack-list{max-width:680px;margin:48px auto 0;border-top:1px solid var(--line)}
+.srow{display:flex;align-items:baseline;gap:18px;padding:16px 4px;border-bottom:1px solid var(--line)}
+.srow .rn{font-size:13px;color:var(--muted2);width:30px;flex-shrink:0;font-variant-numeric:tabular-nums}
+.srow .rname{font-size:18px;font-weight:600;width:130px;flex-shrink:0;letter-spacing:-.01em}
+.srow .rmeta{font-size:14.5px;color:var(--muted)}
